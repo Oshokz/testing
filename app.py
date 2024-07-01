@@ -15,10 +15,10 @@ warnings.filterwarnings('ignore', category=DeprecationWarning)
 
 
 #load the trained model
-model = load_model(r"model.h5")
+model = load_model("model.h5")
  
 # load the saved tokenizer used during traning
-with open(r"tokenizer.pkl", "rb") as tk:
+with open("tokenizer.pkl", "rb") as tk:
           tokenizer = pickle.load(tk)
 # rb because it was saved as binary mode
 
